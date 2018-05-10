@@ -1,0 +1,21 @@
+.thumbnail {
+  height:250px;
+  width:100%;
+  display: flex;
+}
+
+.navbar-inverse {
+  background: #2c3e50;
+}
+
+body {
+  padding-top: 70px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}

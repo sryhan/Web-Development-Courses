@@ -1,0 +1,53 @@
+
+
+
+/*font-family: 'Open Sans', sans-serif;
+
+font-family: 'Raleway', sans-serif;*/
+
+
+
+
+/*font size*/
+p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+}
+
+span {
+  font-size: 2.0em;
+}
+
+/*font family*/
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/*font weight*/
+p {
+  font-weight: bold;
+}
+
+/*line height*/
+p {
+  line-height: 1.5;
+}
+
+/*text alight*/
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: right;
+}
+
+/*text decoration */
+p {
+  text-decoration: underline;
+}
+
+h1 {
+  text-decoration: line-through;
+}

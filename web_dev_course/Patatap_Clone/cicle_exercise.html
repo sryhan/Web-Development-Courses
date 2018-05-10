@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Circle</title>
+  <link rel="stylesheet" href="/home/nadine/Documents/web_dev_course/Patatap_Clone/canvas.css">
+  <script type="text/javascript" src="/home/nadine/Documents/web_dev_course/Patatap_Clone/paperjs/dist/paper-full.js">
+  </script>
+  <script type="text/paperscript" canvas="myCanvas">
+
+    for(i = 0; i < 2000; i+= 200) {
+      for(y = 0; y < 1000; y+= 200){
+        var circle2 = new Path.Circle(new Point(i, y), 50);
+        circle2.fillColor = "purple";
+      }
+
+    }
+
+  </script>
+
+</head>
+<body>
+  <canvas id="myCanvas" resize></canvas>
+</body>
+</html>

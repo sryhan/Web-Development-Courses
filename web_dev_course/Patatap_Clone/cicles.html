@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Circle</title>
+  <link rel="stylesheet" href="/home/nadine/Documents/web_dev_course/Patatap_Clone/canvas.css">
+  <script type="text/javascript" src="/home/nadine/Documents/web_dev_course/Patatap_Clone/paperjs/dist/paper-full.js">
+  </script>
+  <script type="text/paperscript" canvas="myCanvas">
+
+    var circles = [];
+
+    function onKeyDown(event) {
+      var maxPoint = new Point(view.size.width, view.size.height);
+      var randomPoint = Point.random();
+      var point = maxPoint * randomPoint;
+      var newCircle = new Path.Circle(point, 10);
+      newCircle.fillColor = "orange";
+      circles.push(newCircle);
+    }
+
+    var animatedCircle = new Path.Circle(new Point(300, 300), 100);
+    animatedCircle.fillColor = "red";
+
+    function onFrame(event){
+      for(var i=0; i < circles.length; i++) {
+        console.log(circles[i]);
+        circles[i].fillColor.hue += 1;
+      }
+      animatedCircle.fillColor.hue += 1;
+      // animatedCircle.scale(.9)
+    }
+
+
+  </script>
+
+</head>
+<body>
+  <canvas id="myCanvas" resize></canvas>
+</body>
+</html>

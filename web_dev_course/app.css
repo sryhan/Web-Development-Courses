@@ -1,0 +1,23 @@
+h1 {
+  color: red;
+  /*border-color: purple;
+  border-width: 5px;
+  border-style: solid;*/
+  border: 5px purple solid;
+}
+
+li {
+  color: green;
+}
+
+h4 {
+  background: rgba(255, 100, 80, 0.5);
+  color: purple;
+}
+
+body {
+  /*background: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/Wood-Grain-Background-HD.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
+}

@@ -1,0 +1,13 @@
+<% include partials/header %>
+
+<h1>Welcome, <%= thingVar %></h1>
+
+<% if(thingVar.toLowerCase() === 'homer'){ %>
+    <p>D'oh!</p>
+<% } else { %>
+    <p>You're not Homer!</p>
+<% } %>
+
+<p>P.S. this is the welcome.ejs file</p>
+
+<% include partials/footer %>

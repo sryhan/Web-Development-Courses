@@ -1,0 +1,10 @@
+<h1>Users list goes here</h1>
+
+<% friendo.forEach(function(x){ %>
+    <li><%= x %></li>
+<% }); %>
+
+<form action="/adduser" method="POST">
+    <input type="text" name="newuser" placeholder="name">
+    <button>Add user</button>
+</form>
